@@ -3,115 +3,69 @@
 ========================= */
 
 .connection-card {
-  background: linear-gradient(
-    135deg,
-    #1e293b,
-    #172033
-  );
-
+  background: #1e293b;
   padding: 25px;
-
-  border-radius: 14px;
-
+  border-radius: 12px;
   margin-top: 20px;
-
   border: 1px solid #334155;
-
-  box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
 .connection-card h2 {
-  margin-top: 0;
-
   color: #a78bfa;
-
-  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .connection-card label {
   display: block;
-
-  margin-bottom: 8px;
-
   color: #cbd5e1;
-
   font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .connection-card input {
   width: 100%;
-
-  padding: 13px 15px;
-
-  box-sizing: border-box;
-
-  border-radius: 8px;
-
+  padding: 12px;
+  margin: 8px 0 15px;
+  border-radius: 6px;
   border: 1px solid #475569;
-
   background: #0f172a;
-
-  color: #e2e8f0;
-
-  font-size: 14px;
-
+  color: white;
+  box-sizing: border-box;
   outline: none;
-
-  transition:
-    border-color 0.2s,
-    box-shadow 0.2s;
 }
 
 .connection-card input:focus {
   border-color: #8b5cf6;
-
-  box-shadow:
-    0 0 0 3px
-    rgba(139, 92, 246, 0.2);
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
 }
 
 .connection-card input::placeholder {
   color: #64748b;
 }
 
-.connection-card button {
-  margin-top: 12px;
+/* Save Connection button */
 
-  padding: 12px 18px;
-
-  border: none;
-
-  border-radius: 8px;
-
+.connection-card .refresh {
   background: #7c3aed;
-
   color: white;
-
-  font-weight: bold;
-
+  padding: 12px 18px;
+  border-radius: 6px;
+  border: none;
   cursor: pointer;
-
-  transition:
-    background 0.2s,
-    transform 0.1s;
+  font-weight: bold;
 }
 
-.connection-card button:hover {
+.connection-card .refresh:hover {
   background: #6d28d9;
 }
 
-.connection-card button:active {
-  transform: scale(0.97);
-}
+/* Connection status */
 
 #connectionStatus {
   display: inline-block;
-
-  margin-left: 10px;
-
+  margin-left: 8px;
   font-size: 14px;
-
   font-weight: bold;
 }
 
