@@ -44,9 +44,6 @@
 
     .container {
 
-      width:
-        100%;
-
       max-width:
         900px;
 
@@ -56,10 +53,6 @@
     }
 
 
-    /* =========================
-       HEADER
-    ========================= */
-
     h1 {
 
       text-align:
@@ -68,27 +61,13 @@
       color:
         #38bdf8;
 
-      margin:
-        10px 0 30px;
-
-      font-size:
-        32px;
+      margin-bottom:
+        30px;
 
     }
 
 
     h2 {
-
-      margin-top:
-        0;
-
-      color:
-        #f8fafc;
-
-    }
-
-
-    h3 {
 
       margin-top:
         0;
@@ -118,31 +97,15 @@
         1px solid #334155;
 
       box-shadow:
-        0 8px 25px
-        rgba(0, 0, 0, 0.20);
+        0 4px 15px
+        rgba(0,0,0,0.2);
 
     }
 
 
     /* =========================
-       INFORMATION CARD
+       INFO
     ========================= */
-
-    .encryption-card {
-
-      border-left:
-        4px solid #38bdf8;
-
-    }
-
-
-    .encryption-card h2 {
-
-      color:
-        #38bdf8;
-
-    }
-
 
     .info {
 
@@ -184,19 +147,16 @@
         #67e8f9;
 
       padding:
-        7px 11px;
+        6px 10px;
 
       border-radius:
-        6px;
+        5px;
 
       font-family:
         monospace;
 
       margin:
         3px;
-
-      font-size:
-        13px;
 
     }
 
@@ -232,9 +192,6 @@
       font-weight:
         bold;
 
-      margin-top:
-        10px;
-
       margin-bottom:
         8px;
 
@@ -245,23 +202,6 @@
        INPUTS
     ========================= */
 
-    label {
-
-      display:
-        block;
-
-      color:
-        #cbd5e1;
-
-      font-weight:
-        bold;
-
-      margin-top:
-        10px;
-
-    }
-
-
     input,
     textarea {
 
@@ -269,13 +209,13 @@
         100%;
 
       padding:
-        13px;
+        12px;
 
       margin:
         8px 0 15px;
 
       border-radius:
-        7px;
+        6px;
 
       border:
         1px solid #475569;
@@ -303,19 +243,7 @@
 
       box-shadow:
         0 0 0 2px
-        rgba(56, 189, 248, 0.15);
-
-    }
-
-
-    .connection-card input:focus {
-
-      border-color:
-        #8b5cf6;
-
-      box-shadow:
-        0 0 0 2px
-        rgba(139, 92, 246, 0.15);
+        rgba(56,189,248,0.15);
 
     }
 
@@ -353,7 +281,7 @@
         none;
 
       border-radius:
-        7px;
+        6px;
 
       cursor:
         pointer;
@@ -367,33 +295,16 @@
       transition:
         0.2s;
 
-      font-size:
-        14px;
-
     }
 
 
     button:hover {
 
       opacity:
-        0.88;
+        0.85;
 
       transform:
         translateY(-1px);
-
-    }
-
-
-    button:disabled {
-
-      opacity:
-        0.5;
-
-      cursor:
-        not-allowed;
-
-      transform:
-        none;
 
     }
 
@@ -405,14 +316,6 @@
 
       color:
         white;
-
-    }
-
-
-    .post:hover {
-
-      background:
-        #0369a1;
 
     }
 
@@ -450,16 +353,8 @@
     }
 
 
-    .connect:hover {
-
-      background:
-        #6d28d9;
-
-    }
-
-
     /* =========================
-       CONNECTION STATUS
+       STATUS
     ========================= */
 
     #connectionStatus {
@@ -491,6 +386,14 @@
 
       color:
         #f87171;
+
+    }
+
+
+    .connection-warning {
+
+      color:
+        #facc15;
 
     }
 
@@ -527,6 +430,9 @@
       color:
         #fde68a;
 
+      margin-top:
+        0;
+
     }
 
 
@@ -539,7 +445,7 @@
         #fde68a;
 
       padding:
-        13px;
+        14px;
 
       word-break:
         break-all;
@@ -548,7 +454,7 @@
         monospace;
 
       border-radius:
-        6px;
+        5px;
 
       border:
         1px solid #57534e;
@@ -560,7 +466,7 @@
 
 
     /* =========================
-       PUBLIC MESSAGE
+       MESSAGE
     ========================= */
 
     .message {
@@ -637,9 +543,6 @@
       font-size:
         13px;
 
-      line-height:
-        1.5;
-
       border:
         1px solid #1e293b;
 
@@ -677,14 +580,6 @@
     }
 
 
-    .success {
-
-      color:
-        #4ade80;
-
-    }
-
-
     .empty {
 
       color:
@@ -713,44 +608,29 @@
     }
 
 
-    /* =========================
-       MOBILE
-    ========================= */
+    .success-message {
 
-    @media (max-width: 600px) {
+      color:
+        #4ade80;
+
+      margin-top:
+        10px;
+
+    }
+
+
+    @media (max-width:600px) {
 
       body {
-
-        padding:
-          10px;
-
+        padding: 10px;
       }
-
 
       .card {
-
-        padding:
-          18px;
-
+        padding: 18px;
       }
-
 
       h1 {
-
-        font-size:
-          25px;
-
-      }
-
-
-      #connectionStatus {
-
-        display:
-          block;
-
-        margin:
-          10px 0 0;
-
+        font-size: 24px;
       }
 
     }
@@ -766,25 +646,20 @@
 <div class="container">
 
 
-  <!-- ==================================================
-       TITLE
-  ================================================== -->
-
   <h1>
     🔐 AES Public Message Feed
   </h1>
 
 
-  <!-- ==================================================
-       1. IDENTIFY CIPHER
-  ================================================== -->
+  <!-- =========================================
+       ENCRYPTION INFORMATION
+  ========================================== -->
 
-  <div class="card encryption-card">
+  <div class="card">
 
     <h2>
       🔒 Encryption Information
     </h2>
-
 
     <p class="info">
 
@@ -796,18 +671,15 @@
 
     </p>
 
-
     <p class="info">
 
       AES means
       <b>Advanced Encryption Standard</b>.
 
-      This webpage uses AES with a
-      <b>256-bit key</b> and
-      <b>GCM mode</b>.
+      Every message is encrypted in the browser
+      before it is sent to Google Apps Script.
 
     </p>
-
 
     <div>
 
@@ -816,38 +688,28 @@
       </span>
 
       <span class="badge">
-        256-BIT KEY
+        256-bit Key
       </span>
 
       <span class="badge">
-        GCM MODE
+        GCM Mode
       </span>
 
     </div>
 
-
     <p class="info">
 
-      Each message receives a new random
-      secret key. The encrypted message is
-      published to the public feed.
-
-    </p>
-
-
-    <p class="info">
-
-      🔑 The correct secret key is required
-      to decrypt the message.
+      🔑 A unique secret key is generated
+      for every message.
 
     </p>
 
   </div>
 
 
-  <!-- ==================================================
-       2. GOOGLE APPS SCRIPT CONNECTION
-  ================================================== -->
+  <!-- =========================================
+       GOOGLE APPS SCRIPT CONNECTION
+  ========================================== -->
 
   <div class="card connection-card">
 
@@ -855,11 +717,11 @@
       ⚙️ Google Apps Script Connection
     </h2>
 
-
     <p class="info">
 
       Paste your Google Apps Script Web App URL
-      to connect this webpage to your Google Spreadsheet.
+      below to connect this webpage to your
+      Google Spreadsheet.
 
     </p>
 
@@ -872,12 +734,13 @@
     <input
       id="webAppUrl"
       type="url"
-      value="https://script.google.com/macros/s/AKfycbyOH9LvSH110gP64R42LkRIjt6cPxo83s77PYED2Ib5Pcfp-X6__ZIl6hq1FDaDR3Zr/exec"
+      value="https://script.google.com/macros/s/AKfycbxRD8b7s7rD-QOq8ndK38apCiIMcyePjrn2e8Iq9HCO36K1b30nqH25ygtO7yM7zu0z/exec"
+      placeholder="https://script.google.com/macros/s/XXXXX/exec"
     >
 
 
     <button
-      class="connect"
+      class="refresh"
       onclick="saveWebAppUrl()"
     >
 
@@ -886,14 +749,16 @@
     </button>
 
 
-    <span id="connectionStatus"></span>
+    <span
+      id="connectionStatus"
+    ></span>
 
   </div>
 
 
-  <!-- ==================================================
-       3. SEND MESSAGE
-  ================================================== -->
+  <!-- =========================================
+       SEND MESSAGE
+  ========================================== -->
 
   <div class="card">
 
@@ -906,12 +771,12 @@
 
       Enter your username and message.
       Your message will be encrypted using
-      AES-256-GCM before being published.
+      AES-256-GCM.
 
     </p>
 
 
-    <label for="username">
+    <label>
       Username
     </label>
 
@@ -919,19 +784,17 @@
     <input
       id="username"
       type="text"
-      maxlength="50"
       placeholder="Enter username"
     >
 
 
-    <label for="message">
+    <label>
       Message
     </label>
 
 
     <textarea
       id="message"
-      maxlength="2000"
       placeholder="Enter your message"
     ></textarea>
 
@@ -947,7 +810,9 @@
     </button>
 
 
-    <!-- SECRET KEY -->
+    <!-- =====================================
+         SECRET KEY
+    ====================================== -->
 
     <div
       id="keyBox"
@@ -963,7 +828,7 @@
 
         ⚠️ Save this key!
 
-        Other users need this key
+        Other users need this exact key
         to decrypt your message.
 
       </p>
@@ -988,9 +853,9 @@
   </div>
 
 
-  <!-- ==================================================
-       4. PUBLIC FEED
-  ================================================== -->
+  <!-- =========================================
+       PUBLIC FEED
+  ========================================== -->
 
   <div class="card">
 
@@ -1002,8 +867,9 @@
     <p class="info">
 
       Encrypted messages are displayed here.
-      Other users can enter the secret key
-      and try to decrypt them.
+
+      Enter the secret key of a message
+      to decrypt it.
 
     </p>
 
@@ -1034,9 +900,8 @@
 
 <script>
 
-
 /* ==================================================
-   GOOGLE APPS SCRIPT URL
+   DEFAULT GOOGLE APPS SCRIPT URL
 ================================================== */
 
 const DEFAULT_WEB_APP_URL =
@@ -1054,11 +919,8 @@ function getWebAppUrl() {
       "webAppUrl"
     );
 
-
   if (saved) {
-
-    return saved.trim();
-
+    return saved;
   }
 
 
@@ -1133,9 +995,7 @@ function saveWebAppUrl() {
 
 
   if (
-    !url.endsWith(
-      "/exec"
-    )
+    !url.endsWith("/exec")
   ) {
 
     status.textContent =
@@ -1271,7 +1131,6 @@ async function generateKey() {
 
       length:
         256
-
     },
 
     true,
@@ -1306,7 +1165,8 @@ async function encryptMessage(
 
 
   /*
-   * AES-GCM uses a random 12-byte IV.
+   * AES-GCM recommended
+   * IV size = 12 bytes.
    */
 
   const iv =
@@ -1324,7 +1184,6 @@ async function encryptMessage(
 
         iv:
           iv
-
       },
 
       key,
@@ -1334,26 +1193,19 @@ async function encryptMessage(
     );
 
 
-  const ivBase64 =
-    toBase64(iv);
-
-
-  const encryptedBase64 =
-    toBase64(
-      encrypted
-    );
-
-
   /*
    * Store:
    *
-   * IV.CIPHERTEXT
+   * Base64(IV).
+   * Base64(ciphertext)
    */
 
   return (
-    ivBase64 +
-    "." +
-    encryptedBase64
+    toBase64(iv)
+    +
+    "."
+    +
+    toBase64(encrypted)
   );
 
 }
@@ -1406,7 +1258,7 @@ async function decryptMessage(
   ) {
 
     throw new Error(
-      "AES-256 key must be 32 bytes."
+      "Invalid AES-256 key."
     );
 
   }
@@ -1442,7 +1294,6 @@ async function decryptMessage(
 
         iv:
           iv
-
       },
 
       key,
@@ -1456,121 +1307,6 @@ async function decryptMessage(
     .decode(
       decrypted
     );
-
-}
-
-
-/* ==================================================
-   SEND DATA TO GOOGLE APPS SCRIPT
-================================================== */
-
-function sendToAppsScript(data) {
-
-  return new Promise(
-    function(resolve, reject) {
-
-      const url =
-        getWebAppUrl();
-
-
-      const iframe =
-        document.createElement(
-          "iframe"
-        );
-
-
-      iframe.style.display =
-        "none";
-
-
-      iframe.name =
-        "appsScriptFrame_" +
-        Date.now();
-
-
-      document.body.appendChild(
-        iframe
-      );
-
-
-      const form =
-        document.createElement(
-          "form"
-        );
-
-
-      form.method =
-        "POST";
-
-
-      form.action =
-        url;
-
-
-      form.target =
-        iframe.name;
-
-
-      form.style.display =
-        "none";
-
-
-      const input =
-        document.createElement(
-          "input"
-        );
-
-
-      input.type =
-        "hidden";
-
-
-      input.name =
-        "data";
-
-
-      input.value =
-        JSON.stringify(
-          data
-        );
-
-
-      form.appendChild(
-        input
-      );
-
-
-      document.body.appendChild(
-        form
-      );
-
-
-      form.submit();
-
-
-      /*
-       * Apps Script receives the POST.
-       *
-       * Because the browser does not expose
-       * the cross-origin response to this form,
-       * we wait briefly and then refresh.
-       */
-
-      setTimeout(
-        function() {
-
-          form.remove();
-
-          iframe.remove();
-
-          resolve();
-
-        },
-        1500
-      );
-
-    }
-  );
 
 }
 
@@ -1599,11 +1335,23 @@ async function createMessage() {
       .trim();
 
 
-  const button =
-    document.getElementById(
-      "publishButton"
-    );
+  const status =
+    document
+      .getElementById(
+        "connectionStatus"
+      );
 
+
+  const publishButton =
+    document
+      .getElementById(
+        "publishButton"
+      );
+
+
+  /* ----------------------------------------------
+     VALIDATION
+  ---------------------------------------------- */
 
   if (!username) {
 
@@ -1627,29 +1375,43 @@ async function createMessage() {
   }
 
 
+  const url =
+    getWebAppUrl();
+
+
+  if (!url) {
+
+    alert(
+      "Please enter your Apps Script URL."
+    );
+
+    return;
+
+  }
+
+
   try {
 
-    button.disabled =
+    publishButton.disabled =
       true;
 
-
-    button.textContent =
+    publishButton.textContent =
       "🔐 Encrypting...";
 
 
-    /*
-     * STEP 1
-     * Generate AES-256-GCM key
-     */
+    /* ==========================================
+       STEP 1
+       GENERATE AES-256 KEY
+    ========================================== */
 
     const key =
       await generateKey();
 
 
-    /*
-     * STEP 2
-     * Encrypt message
-     */
+    /* ==========================================
+       STEP 2
+       ENCRYPT MESSAGE
+    ========================================== */
 
     const ciphertext =
       await encryptMessage(
@@ -1658,10 +1420,10 @@ async function createMessage() {
       );
 
 
-    /*
-     * STEP 3
-     * Export AES key
-     */
+    /* ==========================================
+       STEP 3
+       EXPORT SECRET KEY
+    ========================================== */
 
     const rawKey =
       await crypto.subtle.exportKey(
@@ -1676,44 +1438,14 @@ async function createMessage() {
       );
 
 
-    /*
-     * STEP 4
-     * Send to Apps Script
-     */
+    /* ==========================================
+       STEP 4
+       DISPLAY KEY IMMEDIATELY
 
-    button.textContent =
-      "📤 Publishing...";
-
-
-    await sendToAppsScript({
-
-      action:
-        "save",
-
-      username:
-        username,
-
-      ciphertext:
-        ciphertext,
-
-      /*
-       * Included because your
-       * spreadsheet layout asks for it.
-       */
-
-      plaintext:
-        message,
-
-      key:
-        secretKey
-
-    });
-
-
-    /*
-     * STEP 5
-     * Display secret key
-     */
+       This is important.
+       The key is shown BEFORE sending
+       anything to Google Apps Script.
+    ========================================== */
 
     document
       .getElementById(
@@ -1731,9 +1463,103 @@ async function createMessage() {
       "block";
 
 
-    /*
-     * Clear message
-     */
+    /* ==========================================
+       STEP 5
+       PREPARE DATA
+    ========================================== */
+
+    const data = {
+
+      action:
+        "save",
+
+      username:
+        username,
+
+      ciphertext:
+        ciphertext,
+
+      /*
+       * Included because your Sheet
+       * currently has a Plaintext column.
+       */
+
+      plaintext:
+        message,
+
+      key:
+        secretKey
+
+    };
+
+
+    publishButton.textContent =
+      "📤 Publishing...";
+
+
+    /* ==========================================
+       STEP 6
+       SEND TO APPS SCRIPT
+
+       no-cors is intentional.
+       We don't need to read the response.
+    ========================================== */
+
+    fetch(
+      url,
+      {
+
+        method:
+          "POST",
+
+        mode:
+          "no-cors",
+
+        headers: {
+
+          "Content-Type":
+            "text/plain;charset=utf-8"
+
+        },
+
+        body:
+          JSON.stringify(data)
+
+      }
+
+    )
+    .then(
+      function() {
+
+        status.textContent =
+          "✅ Message sent";
+
+        status.className =
+          "connection-success";
+
+      }
+    )
+    .catch(
+      function(error) {
+
+        console.error(
+          error
+        );
+
+        status.textContent =
+          "⚠️ Saving may have failed";
+
+        status.className =
+          "connection-warning";
+
+      }
+    );
+
+
+    /* ==========================================
+       STEP 7
+       CLEAR MESSAGE
+    ========================================== */
 
     document
       .getElementById(
@@ -1743,22 +1569,22 @@ async function createMessage() {
       "";
 
 
-    button.disabled =
-      false;
-
-
-    button.textContent =
-      "🔒 Encrypt & Publish";
-
-
     alert(
-      "✅ Message encrypted and published!"
+      "🔐 Message encrypted!\n\n" +
+      "Your secret key is now displayed.\n\n" +
+      "⚠️ SAVE YOUR SECRET KEY!"
     );
 
 
+    publishButton.disabled =
+      false;
+
+    publishButton.textContent =
+      "🔒 Encrypt & Publish";
+
+
     /*
-     * Wait for Apps Script to save,
-     * then refresh feed.
+     * Wait a little before loading.
      */
 
     setTimeout(
@@ -1767,7 +1593,7 @@ async function createMessage() {
         loadMessages();
 
       },
-      1800
+      2000
     );
 
 
@@ -1778,16 +1604,15 @@ async function createMessage() {
     );
 
 
-    button.disabled =
+    publishButton.disabled =
       false;
 
-
-    button.textContent =
+    publishButton.textContent =
       "🔒 Encrypt & Publish";
 
 
     alert(
-      "❌ Error: " +
+      "❌ Encryption Error:\n\n" +
       error.message
     );
 
@@ -1797,9 +1622,11 @@ async function createMessage() {
 
 
 /* ==================================================
-   LOAD PUBLIC FEED
-   JSONP VERSION
+   JSONP LOAD MESSAGES
 ================================================== */
+
+let jsonpCounter = 0;
+
 
 function loadMessages() {
 
@@ -1808,9 +1635,10 @@ function loadMessages() {
 
 
   const feed =
-    document.getElementById(
-      "feed"
-    );
+    document
+      .getElementById(
+        "feed"
+      );
 
 
   if (!url) {
@@ -1832,24 +1660,16 @@ function loadMessages() {
 
 
   /*
-   * Create a unique callback function.
+   * JSONP avoids the browser CORS problem
+   * when reading from Apps Script.
    */
 
   const callbackName =
-    "appsScriptCallback_" +
-    Date.now();
+    "aesCallback_" +
+    Date.now() +
+    "_" +
+    (++jsonpCounter);
 
-
-  let script =
-    document.createElement(
-      "script"
-    );
-
-
-  /*
-   * Define callback BEFORE
-   * adding script.
-   */
 
   window[callbackName] =
     function(result) {
@@ -1865,7 +1685,7 @@ function loadMessages() {
             result &&
             result.error
               ? result.error
-              : "Could not load messages."
+              : "Unable to load messages."
           );
 
         }
@@ -1889,27 +1709,55 @@ function loadMessages() {
       }
 
 
-      /*
-       * Cleanup
-       */
+      cleanup();
+
+    };
+
+
+  function cleanup() {
+
+    if (script.parentNode) {
+
+      script.parentNode
+        .removeChild(script);
+
+    }
+
+
+    try {
 
       delete window[
         callbackName
       ];
 
+    } catch (e) {
 
-      if (script) {
+      window[
+        callbackName
+      ] =
+      undefined;
 
-        script.remove();
+    }
 
-      }
-
-    };
+  }
 
 
-  /*
-   * If Apps Script cannot be reached.
-   */
+  const script =
+    document.createElement(
+      "script"
+    );
+
+
+  script.src =
+    url +
+    "?action=getMessages" +
+    "&callback=" +
+    encodeURIComponent(
+      callbackName
+    ) +
+    "&t=" +
+    Date.now();
+
 
   script.onerror =
     function() {
@@ -1918,43 +1766,26 @@ function loadMessages() {
         "<p class='error'>" +
         "❌ Cannot connect to Google Apps Script." +
         "<br><br>" +
-        "Check that your Web App is deployed as " +
-        "<b>Anyone</b> and that the URL ends with /exec." +
+        "Check your Web App URL and deployment settings." +
         "</p>";
 
 
-      delete window[
-        callbackName
-      ];
-
-
-      script.remove();
+      cleanup();
 
     };
 
 
-  /*
-   * Request JSONP response.
-   */
-
-  script.src =
-    url +
-    "?action=getMessages" +
-    "&callback=" +
-    encodeURIComponent(
-      callbackName
+  document
+    .body
+    .appendChild(
+      script
     );
-
-
-  document.body.appendChild(
-    script
-  );
 
 }
 
 
 /* ==================================================
-   DISPLAY PUBLIC FEED
+   DISPLAY MESSAGES
 ================================================== */
 
 function displayMessages(
@@ -1962,9 +1793,10 @@ function displayMessages(
 ) {
 
   const feed =
-    document.getElementById(
-      "feed"
-    );
+    document
+      .getElementById(
+        "feed"
+      );
 
 
   if (
@@ -1999,46 +1831,27 @@ function displayMessages(
         "message";
 
 
-      /*
-       * Convert timestamp.
-       */
-
-      let time =
-        "";
-
-
-      try {
-
-        time =
-          new Date(
-            item.timestamp
-          ).toLocaleString();
-
-      } catch (error) {
-
-        time =
-          item.timestamp;
-
-      }
+      const timestamp =
+        item.timestamp
+          ? new Date(
+              item.timestamp
+            ).toLocaleString()
+          : "Unknown time";
 
 
       div.innerHTML = `
 
         <div class="username">
-
           👤 ${escapeHtml(
-            item.username || "Unknown"
+            item.username || "Anonymous"
           )}
-
         </div>
 
 
         <div class="time">
-
           ${escapeHtml(
-            String(time)
+            timestamp
           )}
-
         </div>
 
 
@@ -2079,7 +1892,6 @@ function displayMessages(
 
         <button
           class="decrypt"
-          type="button"
         >
 
           🔓 Try to Decrypt
@@ -2125,10 +1937,9 @@ function displayMessages(
             result.style.display =
               "block";
 
-
             result.innerHTML =
               "<span class='error'>" +
-              "❌ Please enter a secret key." +
+              "❌ Please enter the secret key." +
               "</span>";
 
             return;
@@ -2141,18 +1952,14 @@ function displayMessages(
             button.disabled =
               true;
 
-
             button.textContent =
               "🔓 Decrypting...";
 
 
             const plaintext =
               await decryptMessage(
-
                 item.ciphertext,
-
                 secretKey
-
               );
 
 
@@ -2186,7 +1993,6 @@ function displayMessages(
 
           button.disabled =
             false;
-
 
           button.textContent =
             "🔓 Try to Decrypt";
@@ -2230,8 +2036,7 @@ function copyKey() {
 
 
   if (
-    navigator.clipboard &&
-    navigator.clipboard.writeText
+    navigator.clipboard
   ) {
 
     navigator.clipboard
@@ -2248,8 +2053,8 @@ function copyKey() {
       .catch(
         function() {
 
-          alert(
-            "Unable to copy the key."
+          fallbackCopy(
+            key
           );
 
         }
@@ -2257,49 +2062,9 @@ function copyKey() {
 
   } else {
 
-    /*
-     * Fallback for older browsers.
-     */
-
-    const textarea =
-      document.createElement(
-        "textarea"
-      );
-
-
-    textarea.value =
-      key;
-
-
-    document.body.appendChild(
-      textarea
+    fallbackCopy(
+      key
     );
-
-
-    textarea.select();
-
-
-    try {
-
-      document.execCommand(
-        "copy"
-      );
-
-
-      alert(
-        "🔑 Secret key copied!"
-      );
-
-    } catch (error) {
-
-      alert(
-        "Please copy the key manually."
-      );
-
-    }
-
-
-    textarea.remove();
 
   }
 
@@ -2307,12 +2072,60 @@ function copyKey() {
 
 
 /* ==================================================
-   HTML SECURITY
+   FALLBACK COPY
 ================================================== */
 
-function escapeHtml(
-  text
-) {
+function fallbackCopy(text) {
+
+  const textarea =
+    document.createElement(
+      "textarea"
+    );
+
+
+  textarea.value =
+    text;
+
+
+  document.body.appendChild(
+    textarea
+  );
+
+
+  textarea.select();
+
+
+  try {
+
+    document.execCommand(
+      "copy"
+    );
+
+    alert(
+      "🔑 Secret key copied!"
+    );
+
+  } catch (error) {
+
+    alert(
+      "Please manually copy the secret key."
+    );
+
+  }
+
+
+  document.body.removeChild(
+    textarea
+  );
+
+}
+
+
+/* ==================================================
+   ESCAPE HTML
+================================================== */
+
+function escapeHtml(text) {
 
   const div =
     document.createElement(
@@ -2321,9 +2134,9 @@ function escapeHtml(
 
 
   div.textContent =
-    text == null
-      ? ""
-      : String(text);
+    String(
+      text ?? ""
+    );
 
 
   return div.innerHTML;
@@ -2332,17 +2145,12 @@ function escapeHtml(
 
 
 /* ==================================================
-   START APPLICATION
+   START
 ================================================== */
 
 window.addEventListener(
   "load",
   function() {
-
-    /*
-     * Load the public feed
-     * automatically.
-     */
 
     loadMessages();
 
@@ -2353,5 +2161,4 @@ window.addEventListener(
 
 
 </body>
-
 </html>
